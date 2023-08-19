@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Shopper's Stop| Compare Prices,Discover Deals & Save Money Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+         <div class="container1" style="background-color:rgb(209, 214, 223)">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo3.png" width="60px" height="60px"></a>
+                </div>
+                 <div class="webname">
+                     <p>SHOPPER'S STOP</p>
+                 </div>
+                <nav>
+                    <ul id="MenuItems" >
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="products.php">Products</a></li> 
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
+                </nav>
+            </div>
+         </div>
+        </header>
+
+        <!--account page-->
+
+        <div class="account-page">
+            <div class="container1">
+                <div class="row" style="background-color:rgb(209, 214, 223)">
+                    <div class="col-1">
+                        <img src="images/account.png" width="80%">
+                    </div>
+                    <div class="col-1">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick=login()>Login</span>
+                                <span onclick=signup()>Signup</span>
+                                <hr id="Indicator">
+                                <form action="login1.php" id="LoginForm" method="post">
+                                    <input type="text" placeholder="Username" name="lname">
+                                    <input type="password" placeholder="Password" name="lpass"> 
+                                    <button type="submit" class="btn">Login</button>
+                                    <a href="">Forgot password?</a>
+                                </form>
+                                <form action="signup1.php" id="SignupForm" method="post">
+                                    <input type="text" placeholder="Username" name="sname">
+                                    <input type="email" placeholder="Email" name="smail"> 
+                                    <input type="password" placeholder="New Password" name="spass1"> 
+                                    <input type="password" placeholder="Confirm Password" name="spass2"> 
+                                    <button type="submit" class="btn">Signup</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--footer-->
+        <div class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App For Android and ios mobile phopne.</p>
+                        <div class="app-logo">
+                            <img src="images/play.png" width="250" height="60" >
+                            <img src="images/app.png" width="250" height="60">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo4.png" height="220" width="150">
+                        <p>Compare Prices,Discover Deals &<br> Save Money Online.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Privacy</li>
+                            <li>Return Policy</li>
+                            <li>Legal</li>
+                            <li>Feedback</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr><p class="copy" style="padding-bottom: 5px;">Copyright © 2021 Shopper's Stop Inc. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- js for switching btw(toggle form) login and sign up form-->
+        <script>
+            var LoginForm = document.getElementById("LoginForm");
+            var SignupForm = document.getElementById("SignupForm");
+            var Indicator= document.getElementById("Indicator");
+
+             function signup(){
+                 SignupForm.style.transform ="translateX(0px)";
+                 LoginForm.style.transform ="translateX(0px)";
+                 Indicator.style.transform ="translateX(100px)";
+             }
+             function login(){
+                 SignupForm.style.transform ="translateX(300px)";
+                 LoginForm.style.transform ="translateX(300px)";
+                 Indicator.style.transform ="translateX(0px)";
+             }
+        </script>
+        <!--js for toggle menu-->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                  MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                  MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

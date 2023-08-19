@@ -1,0 +1,540 @@
+/* control+/ for commenting in css code */
+
+/* home page */
+body{
+    background-color: rgb(209, 214, 223);  
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.webname p{
+    font-size: 30px; 
+    text-align: center; 
+    color: black;
+    padding: 15px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 23px;
+}
+a{
+    text-decoration: none;
+    color:rgb(48, 45, 45);
+}
+p{
+    color:#555;
+}
+.container1{
+    max-width:1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row1{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis:50%;
+    min-width:300px;
+    
+}
+.col-2 img{
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-2 h1{
+    font-size:40px;
+    margin:25px;
+    line-height:60px;
+}
+.row2{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(34, 32, 32);
+    padding: bottom 30px;
+}
+.col-3 img{
+    flex-basis:50%;
+    min-width:300px;
+    max-width: 100%;
+    padding:35px 0 40px 0;
+}
+.btn{
+    display:inline-block;
+    background:black;
+    color:aliceblue;
+    padding: 8px 30px;
+    margin: 6px 0;
+    border-radius: 15px;
+}
+.btn:hover{
+    background: #5d5e61;
+}
+.col-2 .btn:hover{
+    background: #9c9090;
+}
+.btn1{
+    display:inline-block;
+    background:black;
+    color:aliceblue;
+    padding: 8px 30px;
+    margin: 6px 0;
+    border-radius: 15px;
+}
+.row3{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(209, 214, 223);
+}
+figcaption {
+    color: rgb(0, 0, 0);
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration-style: solid white;
+}
+figcaption:hover{
+    color: #676a74;
+    text-decoration:underline;
+}
+.col-6 img{
+    flex-basis:50%;
+    min-width:300px;
+    max-width: 100%;
+    padding:35px 0 40px 0;
+}
+h2{
+    margin-left:120px;
+}
+.row4{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+.col-5 img{
+    flex-basis:50%;
+    padding:40px 0 60px 0;
+}
+header{
+    background-color:rgb(209, 214, 223);
+    padding-bottom: 30px;
+}
+#brands{
+    padding:20px;
+    background-color:rgb(12, 11, 11);
+    color:rgb(209, 214, 223);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------footer-------------- */
+.footer{
+    background:black;
+    color:#5d5e61;
+    font-size: 14px;
+    padding:0px 0 20px;
+}
+.row{
+    background:black;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer p{
+    color:#837f7f;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width:250px;
+}
+.footer-col-1{
+    flex-basis:30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align:center;
+}
+.footer-col-2 img{
+    flex-basis:50%;
+    padding:75px 0 10px 0;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis:12%;
+    text-align:center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top:15px;
+}
+hr{
+    border:none;
+    background:#fff;
+    height:1px;
+    margin:20px 0;
+}
+.copy{
+    text-align: center;
+}
+
+/* account-page  */
+
+.account-page{
+    padding:50px 0;
+    background-color:rgb(209, 214, 223);
+}
+.form-container{
+    background: #fff;
+    width:300px;
+    height:400px;
+    position:relative;
+    text-align:center;
+    padding:20px 0;
+    margin:auto;
+    box-shadow:0 0 20px 0px rgb(71, 71, 71);
+    /* overflow wen made hidden hides the other form in container */
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding:0 10px;
+    color:#555;
+    cursor:pointer;
+    width:100px;
+    display:inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width:300px;
+    padding:0 20px;
+    position: absolute;  
+    /* absolute it overlaps both the forms */
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width:100%;
+    height: 30px;
+    margin:10px 0;
+    padding:0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    margin:10px 0; 
+}
+/* here it separates both the forms */
+#LoginForm{
+    left:-300px;
+}
+#SignupForm{
+    left:0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background:#ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* product page */
+
+.col-4{
+    flex-basis: 25%;
+    padding:10px;
+    min-width:200px;
+    margin-bottom: 50px;
+    background-color: rgb(209, 214, 223);
+    transition: transform 0.25s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+.checked {
+    color: orange;
+}
+.title{
+    text-align:center;
+    margin:0 auto 20px;
+    position:relative;
+    line-height: 60px;
+    color:#555;
+}
+.title::after{
+    content:'';
+    background: #ff523b;
+    width:80px;
+    height:5px;
+    border-radius:5px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.small-container.row .row-2.title{
+    text-align:center;
+    margin:0 auto 20px;
+    position:relative;
+    line-height: 60px;
+    color:#555;
+}
+.small-container.row .row-2.title::after{
+    content:'';
+    background: #ff523b;
+    width:80px;
+    height:5px;
+    border-radius:5px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+h4{
+    color:#555;
+    font-weight:normal;
+}
+.col-4 p{
+    font-size:14px;
+
+}
+.col-4:hover{
+    transform: translateY(-15px);
+}
+
+.menu-icon{
+    width: 35px;
+    height: 35px;
+    display:none;
+    float: right;
+}
+/*----media query for menu----*/
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        background: rgb(15, 16, 20);
+        width: 100%;
+        overflow:hidden;
+        transition:max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0px 10px 50px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display:block;
+        cursor:pointer;
+    }
+    .single-product{
+        text-align: center;
+        
+    }
+    .single-product .row .col-2 img{
+        padding-left: 0px;
+    }
+}
+
+/*----media query for less than 600 screen size----*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+        margin:auto;
+    }
+    .col-2, .col-3, .col-4, .col-5, .col-6 {
+        flex-basis:100%;
+        margin:auto;
+    }
+    .col-5{
+        display:block;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding:20px 0;
+        padding-left: 0px;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height:32px;
+    }
+    .single-product img,.single-product h1{
+        margin-left: 20px;
+        width: 100%;
+    }
+}
+
+/*------single product details---*/
+
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding:0;
+}
+.single-product .col-2{
+    padding:20px;
+}
+.single-product h4{
+    margin:20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+.small-img-row{
+    display:flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis:31%;
+    cursor:pointer;
+}
+
+
+#lowprice{
+    display:none;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopper's Stop| Compare Prices,Discover Deals & Save Money Online</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+         <div class="container1" style="background-color:rgb(209, 214, 223)">
+          <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo3.png" width="60px" height="60px"></a>
+            </div>
+             <div class="webname">
+                 <p>SHOPPER'S STOP</p>
+             </div>
+            <nav>
+                <ul id="MenuItems" >
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="products.php">Products</a></li> 
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
+            </nav>
+            </div>
+            <div class="row1">
+                <div class="col-2">
+                    <h1>Give Yourself<br>A New Gift!</h1>
+                    <p style="font-size: 25px">Products at their best price in the market. Compare prices on top websites.</p>
+                    <a href="account.html" class="btn">Get Started &#8594</a>  
+                </div>
+                <div class="col-2">
+                    <img src="images\ip137.png" height="700">
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col-3">
+                    <a href="products.php">
+                        <figure>
+                            <img src="images2\ioio4.jpg" height="500" width="350">
+                            <figcaption style="color:aliceblue">Mobiles</figcaption>
+                        </figure> 
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="products.php">
+                        <figure>
+                        <img src="images2\ioio2.jpg" height="500" width="350">
+                        <figcaption style="color:aliceblue">Headphones</figcaption>
+                    </figure>
+                    </a>  
+                </div>
+            </div>
+            <div class="row3">
+                <div class="col-6">
+                    <a href="products.php">
+                        <figure>
+                        <img src="images2\ioio1.jpg" height="500" width="350">
+                        <figcaption>Accesories</figcaption>
+                    </figure>
+                    </a>                   
+                </div>
+                <div class="col-6">
+                    <a href="products.php">
+                        <figure>
+                        <img src="images2\ioio3.jpg" height="500" width="350">
+                        <figcaption>More Mobiles</figcaption>
+                    </figure>
+                    </a>                  
+                </div>
+            </div>
+            <h3 id="brands">TOP BRANDS</h3>
+            <div class="row4">
+                <div class="col-5">
+                    <img src="images\apple.jpg" height="220" width="130">
+                </div>
+                <div class="col-5">
+                    <img src="images\oneplus.jpg" height="220" width="130">
+                </div>
+                <div class="col-5">
+                    <img src="images\samsung.jpg" height="220" width="130">
+                </div>
+                <div class="col-5">
+                    <img src="images\jbl.jpg" height="220" width="130">
+                </div>
+                <div class="col-5">
+                    <img src="images\sony.jpg" height="220" width="130">
+                </div>
+            </div>
+          </div>
+        </header>
+        <!------footer------>
+        <div class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App For Android and ios mobile phopne.</p>
+                        <div class="app-logo">
+                            <img src="images/play.png" width="250" height="60" >
+                            <img src="images/app.png" width="250" height="60">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo4.png" height="220" width="150">
+                        <p>Compare Prices,Discover Deals &<br> Save Money Online.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Privacy</li>
+                            <li>Return Policy</li>
+                            <li>Legal</li>
+                            <li>Feedback</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr><p class="copy" style="padding-bottom: 5px;">Copyright © 2021 Shopper's Stop Inc. All rights reserved.</p>
+            </div>
+        </div>
+        <!--js for toggle menu-->
+          <script>
+              var MenuItems=document.getElementById("MenuItems");
+              MenuItems.style.maxHeight = "0px";
+              function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                  {
+                    MenuItems.style.maxHeight = "200px";
+                  }
+                  else{
+                    MenuItems.style.maxHeight = "0px";
+                  }
+              }
+          </script>
+    </body>
+</html>
